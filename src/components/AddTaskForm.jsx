@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-const AddTaskForm = ({ ADD_TASK }) => {
+const AddTaskForm = ({ addTask }) => {
   const [text, setText] = useState('');
 
   const HANDLE_SUBMIT = (e) => {
     e.preventDefault();
-    ADD_TASK(text);
+    addTask(text);
     setText('');
   };
 
